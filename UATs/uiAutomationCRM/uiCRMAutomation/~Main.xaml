@@ -79,6 +79,7 @@
       <AssemblyReference>System.Collections</AssemblyReference>
       <AssemblyReference>System.Collections.NonGeneric</AssemblyReference>
       <AssemblyReference>System.Runtime.Numerics</AssemblyReference>
+      <AssemblyReference>GlobalVariablesT1PNoYwrqg</AssemblyReference>
     </sco:Collection>
   </TextExpression.ReferencesForImplementation>
   <Sequence DisplayName="Main Sequence" sap:VirtualizedContainerService.HintSize="558,766" sap2010:WorkflowViewState.IdRef="Sequence_1">
@@ -96,6 +97,7 @@
         </Variable>
         <Variable x:TypeArguments="x:Int32" Name="intAge" />
         <Variable x:TypeArguments="x:Double" Name="dbTemperatureNairobi" />
+        <Variable x:TypeArguments="x:String" Name="variable1" />
       </Sequence.Variables>
       <sap:WorkflowViewStateService.ViewState>
         <scg:Dictionary x:TypeArguments="x:String, x:Object">
