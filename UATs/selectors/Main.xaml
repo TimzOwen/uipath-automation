@@ -1,4 +1,4 @@
-<Activity mc:Ignorable="sap sap2010" x:Class="Main" VisualBasic.Settings="{x:Null}" sap:VirtualizedContainerService.HintSize="1116,834" sap2010:WorkflowViewState.IdRef="ActivityBuilder_1" xmlns="http://schemas.microsoft.com/netfx/2009/xaml/activities" xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" xmlns:sap="http://schemas.microsoft.com/netfx/2009/xaml/activities/presentation" xmlns:sap2010="http://schemas.microsoft.com/netfx/2010/xaml/activities/presentation" xmlns:scg="clr-namespace:System.Collections.Generic;assembly=System.Private.CoreLib" xmlns:sco="clr-namespace:System.Collections.ObjectModel;assembly=System.Private.CoreLib" xmlns:uix="http://schemas.uipath.com/workflow/activities/uix" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+<Activity mc:Ignorable="sap sap2010" x:Class="Main" VisualBasic.Settings="{x:Null}" sap:VirtualizedContainerService.HintSize="1116,924" sap2010:WorkflowViewState.IdRef="ActivityBuilder_1" xmlns="http://schemas.microsoft.com/netfx/2009/xaml/activities" xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" xmlns:sap="http://schemas.microsoft.com/netfx/2009/xaml/activities/presentation" xmlns:sap2010="http://schemas.microsoft.com/netfx/2010/xaml/activities/presentation" xmlns:scg="clr-namespace:System.Collections.Generic;assembly=System.Private.CoreLib" xmlns:sco="clr-namespace:System.Collections.ObjectModel;assembly=System.Private.CoreLib" xmlns:uix="http://schemas.uipath.com/workflow/activities/uix" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
   <TextExpression.NamespacesForImplementation>
     <sco:Collection x:TypeArguments="x:String">
       <x:String>System.Activities</x:String>
@@ -83,44 +83,71 @@
       <AssemblyReference>System.ComponentModel.Primitives</AssemblyReference>
     </sco:Collection>
   </TextExpression.ReferencesForImplementation>
-  <Sequence DisplayName="Main Sequence" sap:VirtualizedContainerService.HintSize="512,769" sap2010:WorkflowViewState.IdRef="Sequence_1">
+  <Sequence DisplayName="Main Sequence" sap:VirtualizedContainerService.HintSize="512,859" sap2010:WorkflowViewState.IdRef="Sequence_1">
     <sap:WorkflowViewStateService.ViewState>
       <scg:Dictionary x:TypeArguments="x:String, x:Object">
         <x:Boolean x:Key="IsExpanded">True</x:Boolean>
       </scg:Dictionary>
     </sap:WorkflowViewStateService.ViewState>
-    <uix:NApplicationCard AttachMode="ByInstance" DisplayName="Use Application: Untitled - Notepad" sap:VirtualizedContainerService.HintSize="450,681" sap2010:WorkflowViewState.IdRef="NApplicationCard_1" ScopeGuid="2a70d8a9-55d8-4c73-9419-537b3f0af752" Version="V2">
+    <uix:NApplicationCard AttachMode="ByInstance" DisplayName="Use Browser Edge: Chapter 7 Selectors - Date today: 24-07-2024" sap:VirtualizedContainerService.HintSize="450,771" sap2010:WorkflowViewState.IdRef="NApplicationCard_3" InteractionMode="DebuggerApi" ScopeGuid="da2ec71e-653c-4fab-bcd0-6cf558983323" Version="V2">
       <uix:NApplicationCard.Body>
         <ActivityAction x:TypeArguments="x:Object">
           <ActivityAction.Argument>
             <DelegateInArgument x:TypeArguments="x:Object" Name="WSSessionData" />
           </ActivityAction.Argument>
-          <Sequence DisplayName="Do" sap:VirtualizedContainerService.HintSize="416,367" sap2010:WorkflowViewState.IdRef="Sequence_2">
+          <Sequence DisplayName="Do" sap:VirtualizedContainerService.HintSize="416,531" sap2010:WorkflowViewState.IdRef="Sequence_3">
             <sap:WorkflowViewStateService.ViewState>
               <scg:Dictionary x:TypeArguments="x:String, x:Object">
                 <x:Boolean x:Key="IsExpanded">True</x:Boolean>
               </scg:Dictionary>
             </sap:WorkflowViewStateService.ViewState>
-            <uix:NTypeInto ActivateBefore="True" ClickBeforeMode="Single" DisplayName="Type Into 'RichEditD2DPT'" EmptyFieldMode="SingleLine" sap:VirtualizedContainerService.HintSize="354,279" sap2010:WorkflowViewState.IdRef="NTypeInto_1" ScopeIdentifier="2a70d8a9-55d8-4c73-9419-537b3f0af752" Text="Note pad" Version="V3">
-              <uix:NTypeInto.Target>
-                <uix:TargetAnchorable DesignTimeRectangle="6, 75, 1058, 730" DesignTimeScaleFactor="1" ElementType="InputBox" FullSelectorArgument="&lt;wnd cls='RichEditD2DPT' /&gt;" FuzzySelectorArgument="&lt;wnd cls='RichEditD2DPT' /&gt;" Guid="1e38729b-4a29-467b-88ba-3c403d60c3b6" InformativeScreenshot="39cfedfc03c1d7683f0d2835283cbb10.png" ScopeSelectorArgument="&lt;wnd app='notepad.exe' appid='Microsoft.WindowsNotepad_8wekyb3d8bbwe!App' title='Untitled - Notepad' /&gt;" SearchSteps="Selector, FuzzySelector" Version="V4" Visibility="Interactive" />
-              </uix:NTypeInto.Target>
-              <uix:NTypeInto.VerifyOptions>
-                <uix:VerifyExecutionTypeIntoOptions DisplayName="{x:Null}" Mode="Appears">
-                  <uix:VerifyExecutionTypeIntoOptions.Retry>
+            <uix:NClick ActivateBefore="True" ClickType="Single" DisplayName="Click 'Button'" sap:VirtualizedContainerService.HintSize="354,225" sap2010:WorkflowViewState.IdRef="NClick_1" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="da2ec71e-653c-4fab-bcd0-6cf558983323" Version="V3">
+              <uix:NClick.Target>
+                <uix:TargetAnchorable BrowserURL="https://www.rpa-unlimited.com/uipath-rpa-beginners-course/chapter7-selectors/" CVScreenId="5faa363e-e754-4cbc-9ff1-50b28eaeb9b8" CvElementArea="433, 506, 55, 29" CvTextArea="443, 514, 34, 11" CvTextArgument="Button" CvType="Button" DesignTimeRectangle="435, 507, 51, 26" DesignTimeScaleFactor="0.8999999761581421" ElementType="Button" FullSelectorArgument="&lt;webctrl parentid='test' tag='BUTTON' /&gt;" FuzzySelectorArgument="&lt;webctrl parentid='test' tag='BUTTON' type='button' class='btn btn-primary' aaname='Button' check:innerText='Button' /&gt;" Guid="4937fb60-b568-4dab-b367-ba5834f68860" InformativeScreenshot="1fc21e9eff233f29631ac6da09963d2b.png" ScopeSelectorArgument="&lt;html app='msedge.exe' title='Chapter 7 Selectors - Date today: 24-07-2024' /&gt;" SearchSteps="FuzzySelector, CV" Version="V4" Visibility="Interactive">
+                  <uix:TargetAnchorable.Anchors>
+                    <scg:List x:TypeArguments="uix:ITarget" Capacity="4">
+                      <uix:Target CVScreenId="5faa363e-e754-4cbc-9ff1-50b28eaeb9b8" CvTextArea="394, 512, 40, 11" CvTextArgument="Button 1" CvType="Text" DesignTimeRectangle="394, 510, 41, 15" ElementType="Text" FullSelectorArgument="&lt;webctrl id='button1' tag='SPAN' /&gt;" FuzzySelectorArgument="&lt;webctrl id='button1' tag='SPAN' type='' class='' aaname='Button 1' check:innerText='Button 1' /&gt;" Guid="42c2042e-e746-4e4f-b1e7-dfac3799ae3b" SearchSteps="FuzzySelector, CV" />
+                    </scg:List>
+                  </uix:TargetAnchorable.Anchors>
+                </uix:TargetAnchorable>
+              </uix:NClick.Target>
+              <uix:NClick.VerifyOptions>
+                <uix:VerifyExecutionOptions DisplayName="{x:Null}" Mode="Appears">
+                  <uix:VerifyExecutionOptions.Retry>
                     <InArgument x:TypeArguments="x:Boolean" />
-                  </uix:VerifyExecutionTypeIntoOptions.Retry>
-                  <uix:VerifyExecutionTypeIntoOptions.Timeout>
+                  </uix:VerifyExecutionOptions.Retry>
+                  <uix:VerifyExecutionOptions.Timeout>
                     <InArgument x:TypeArguments="x:Double" />
-                  </uix:VerifyExecutionTypeIntoOptions.Timeout>
-                </uix:VerifyExecutionTypeIntoOptions>
-              </uix:NTypeInto.VerifyOptions>
-            </uix:NTypeInto>
+                  </uix:VerifyExecutionOptions.Timeout>
+                </uix:VerifyExecutionOptions>
+              </uix:NClick.VerifyOptions>
+            </uix:NClick>
+            <uix:NClick ActivateBefore="True" ClickType="Single" DisplayName="Click 'Button'" sap:VirtualizedContainerService.HintSize="354,218" sap2010:WorkflowViewState.IdRef="NClick_2" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="da2ec71e-653c-4fab-bcd0-6cf558983323" Version="V3">
+              <uix:NClick.Target>
+                <uix:TargetAnchorable BrowserURL="https://www.rpa-unlimited.com/uipath-rpa-beginners-course/chapter7-selectors/" CVScreenId="82c0dba8-6b62-4661-9096-5a333272b511" CvElementArea="155, 548, 54, 29" CvTextArea="165, 557, 34, 11" CvTextArgument="Button" CvType="Button" DesignTimeRectangle="157, 550, 51, 26" DesignTimeScaleFactor="0.8999999761581421" ElementType="Button" FullSelectorArgument="&lt;webctrl idx='2' parentid='test' tag='BUTTON' /&gt;" FuzzySelectorArgument="&lt;webctrl type='button' parentid='test' tag='BUTTON' class='btn btn-primary' aaname='Button' check:innerText='Button' /&gt;" Guid="d0a9bea2-e46e-4fce-aecb-eb5744ae4e2a" InformativeScreenshot="38f89e3c630be2e0179ff22faed83a9d.png" ScopeSelectorArgument="&lt;html app='msedge.exe' title='Chapter 7 Selectors - Date today: 24-07-2024' /&gt;" SearchSteps="FuzzySelector, CV" Version="V4" Visibility="Interactive">
+                  <uix:TargetAnchorable.Anchors>
+                    <scg:List x:TypeArguments="uix:ITarget" Capacity="4">
+                      <uix:Target CVScreenId="82c0dba8-6b62-4661-9096-5a333272b511" CvTextArea="115, 556, 42, 11" CvTextArgument="Button 2" CvType="Text" DesignTimeRectangle="116, 554, 41, 15" ElementType="Text" FullSelectorArgument="&lt;webctrl id='button2' tag='SPAN' /&gt;" FuzzySelectorArgument="&lt;webctrl id='button2' tag='SPAN' type='' class='' aaname='Button 2' check:innerText='Button 2' /&gt;" Guid="27fcef16-3e20-4ff1-a855-bbe199c2b234" SearchSteps="FuzzySelector, CV" />
+                    </scg:List>
+                  </uix:TargetAnchorable.Anchors>
+                </uix:TargetAnchorable>
+              </uix:NClick.Target>
+              <uix:NClick.VerifyOptions>
+                <uix:VerifyExecutionOptions DisplayName="{x:Null}" Mode="Appears">
+                  <uix:VerifyExecutionOptions.Retry>
+                    <InArgument x:TypeArguments="x:Boolean" />
+                  </uix:VerifyExecutionOptions.Retry>
+                  <uix:VerifyExecutionOptions.Timeout>
+                    <InArgument x:TypeArguments="x:Double" />
+                  </uix:VerifyExecutionOptions.Timeout>
+                </uix:VerifyExecutionOptions>
+              </uix:NClick.VerifyOptions>
+            </uix:NClick>
           </Sequence>
         </ActivityAction>
       </uix:NApplicationCard.Body>
       <uix:NApplicationCard.TargetApp>
-        <uix:TargetApp Area="300, 48, 1070, 843" FilePath="Microsoft.WindowsNotepad_8wekyb3d8bbwe!App" IconBase64="iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAO6SURBVFhHrZRHU1RBFIXZWCLzcwxVblWQDCJm0UFFgqBIGAUF/A8uwCrdsDIVkpRkIAmSw+QBkTSBYUgK6+vt7tc9702gB8euOvWqevG+c85998Xsdw6VPtejgDyVq6juDnyUF1ApV1HdRXTqHHt6FNTad8ULiKqtv6HKsqO5Mxi3oNK4qbl7OO2D0ql1zV3xxBrcG/dA0ZhH3katfQ9qEF5j+wMZLVP0BenNk1Bl3oHH5m1IbZqgdylN41AxuwnlsxuQ9H6M3iW+G4UHCL8/6YWEtyP0Lv7NCAGj3FA46pa3UWPbhacIf4KJqy0s9WOEPzJtg8FEEm8p4E0om9lgiVEE/GCSwUswcfG4SE3BBaMuyB9xyQ0EgTG1AeEcTOEILptW4ASspC6Z8IYAuyn47g8nlYIJfwiY101TK3MWYJ46EOyfs6i7AMH5IwycN7wKd1AKJvzRgnndajCrWwsOSE3BLHXesJOCbw+twK3vK3ID+82Zpo5gzhSMEmAKX4bcwWW5AU3dOGedoYF+zf8iXWWDAOsHl+DmwJLcgHbOvqgMxKEBDr4xsAg5/YtyA7zuwDkH1R1uzqhcTK3H1Bx8A8E5fb/gOkrBhD//Omf2kanrVsD9DHytdwGu9v6UGwi1VgzMU6vWaoh/3do587r94AW48u0nXP4agQG+VgRM9pl8SKHmG4niKuvhKoIZfB4ufZmTGwisO1oDDDwPFxF+4bNDboDXrZ7zvnUHzZnXjWAUAzN4do9dbiDU71M65z7tnAmY1M1TZ/c44Hy3HbK6bXIDQWuFv8/AteJgkVozZ3/dFIypsxB+rssGmV1WuYHAfSY/k1DzjURxFfU0NYV3WiGjwyI3EFh3NAaOoAEK7rRAOsLTPpnlBljd8jnztQquW5UYRcEdZkhFeMpHk9yAGsx/nwedMwGTunnqVAQTeHK7UW4g1O8zeK0YmKwV/7r9qdVglpqAk1CJbbNyA36wdq0YWJU6CKzUTcBK3cntJgE+2zoLCa0zcgMc7K/74HMWqRGciOCzCE5omYH4lmm5gUjnTOFh5pzUxlP7wWeap+H0hym5gSbzYkDdB58zr1sNPoVqHIvgRzQ3NwdEDoeDym63B8lmswlZrVYhi8UiZDabqUwmk5DRGMEWvH6mB5/PR7W+vk7l9XqF1tbWqDwej5Db7RZyuVxCTqeTanV1lep1XY7cwP0TsVB07DAUKMo/Gp3IOwpRxcdjofxkrNzAq3Rd/ovUOGhI+X8i73uZpoPGTF2eglFOTMxfgOYUr6FIl+IAAAAASUVORK5CYII=" InformativeScreenshot="fca4e80d998cea3676cba4413c8a3918.png" Selector="&lt;wnd app='notepad.exe' appid='Microsoft.WindowsNotepad_8wekyb3d8bbwe!App' title='Untitled - Notepad' /&gt;" Title="Untitled - Notepad" />
+        <uix:TargetApp Area="-8, -8, 1936, 1048" BrowserType="Edge" IconBase64="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" InformativeScreenshot="b67969c9bddc6471acc51e9a6ff79bd5.jpg" Selector="&lt;html app='msedge.exe' title='Chapter 7 Selectors - Date today: 24-07-2024' /&gt;" Title="Chapter 7 Selectors - Date today: 24-07-2024" Url="https://www.rpa-unlimited.com/uipath-rpa-beginners-course/chapter7-selectors/" />
       </uix:NApplicationCard.TargetApp>
     </uix:NApplicationCard>
   </Sequence>
